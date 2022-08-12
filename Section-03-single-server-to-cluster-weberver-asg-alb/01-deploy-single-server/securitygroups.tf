@@ -1,10 +1,10 @@
-resource "aws_security_group" "webserver_sg" { 
+resource "aws_security_group" "dg_webserver_sg" { 
 
     ingress {
         from_port = 22
         to_port = 22
         protocol = "tcp"
-        cidr_blocks = [ "73.241.51.131/32"]
+        cidr_blocks = [ "76.223.231.251/32"]
     }
     
     egress {
